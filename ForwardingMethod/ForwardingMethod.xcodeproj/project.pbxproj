@@ -15,7 +15,7 @@
 		BF60ACFA247214D400347C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60ACF8247214D400347C29 /* LaunchScreen.storyboard */; };
 		BF60ACFD247214D400347C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60ACFC247214D400347C29 /* main.m */; };
 		BF60AD052472156B00347C29 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60AD042472156B00347C29 /* Person.m */; };
-		BF60AD0824721BEC00347C29 /* NSObject+ForwardMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60AD0724721BEC00347C29 /* NSObject+ForwardMethod.m */; };
+		BF60AD0824721BEC00347C29 /* NSObject+ForwardMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60AD0724721BEC00347C29 /* NSObject+ForwardMethod.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
