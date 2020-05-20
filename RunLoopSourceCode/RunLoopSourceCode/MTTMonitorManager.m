@@ -55,7 +55,7 @@ static const NSUInteger MXRMonitorRunLoopDefaultStandstillCount = 5;
 
 - (void)startMonitor {
     self.isCancel = false;
-    
+    [self registerObserver];
 }
 
 static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info) {
@@ -105,8 +105,9 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
                         NSLog(@"卡顿次数:%ld",strongSelf.countTime);
                         continue;
                     }
-                    // 记录卡顿前的调用栈
-                    
+                    // 记录当前线程的调用栈
+                    [strongSelf logStack];
+                    [strongSelf printLogTrace];
                 }
             }
             strongSelf.countTime = 0;
@@ -116,6 +117,7 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
 }
 
 - (void)logStack {
+    NSLog(@"当前线程:%@",[NSThread currentThread]);
     void *callstack[128];
     int frames = backtrace(callstack, 128);
     char **strs = backtrace_symbols(callstack, frames);
@@ -125,6 +127,20 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
         [_backtrace addObject:[NSString stringWithUTF8String:strs[i]]];
     }
     free(strs);
+}
+
+- (void)printLogTrace {
+    NSLog(@"========堆栈信息==========\n %@ \n",_backtrace);
+}
+
+- (void)endMonitor {
+    self.isCancel = true;
+    if (!_observer) {
+        return;
+    }
+    CFRunLoopRemoveObserver(CFRunLoopGetMain(), _observer, kCFRunLoopCommonModes);
+    CFRelease(_observer);
+    _observer = NULL;
 }
 
 
