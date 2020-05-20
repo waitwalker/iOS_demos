@@ -15,6 +15,7 @@
 		BF60AD2524722BA500347C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60AD2324722BA500347C29 /* LaunchScreen.storyboard */; };
 		BF60AD2824722BA500347C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60AD2724722BA500347C29 /* main.m */; };
 		BF710B5A2474B9ED001E6284 /* MTTThread.m in Sources */ = {isa = PBXBuildFile; fileRef = BF710B592474B9EC001E6284 /* MTTThread.m */; };
+		BFE54CA12474FBE500A96C35 /* MTTMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE54CA02474FBE500A96C35 /* MTTMonitorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -199,6 +200,8 @@
 		BF60AE8724722D7000347C29 /* CFPlugIn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFPlugIn.c; sourceTree = "<group>"; };
 		BF710B582474B9EC001E6284 /* MTTThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTThread.h; sourceTree = "<group>"; };
 		BF710B592474B9EC001E6284 /* MTTThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTThread.m; sourceTree = "<group>"; };
+		BFE54C9F2474FBE500A96C35 /* MTTMonitorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTMonitorManager.h; sourceTree = "<group>"; };
+		BFE54CA02474FBE500A96C35 /* MTTMonitorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTMonitorManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +241,8 @@
 				BF60AD1924722BA300347C29 /* SceneDelegate.m */,
 				BF60AD1B24722BA300347C29 /* ViewController.h */,
 				BF60AD1C24722BA300347C29 /* ViewController.m */,
+				BFE54C9F2474FBE500A96C35 /* MTTMonitorManager.h */,
+				BFE54CA02474FBE500A96C35 /* MTTMonitorManager.m */,
 				BF60AD1E24722BA300347C29 /* Main.storyboard */,
 				BF60AD2124722BA500347C29 /* Assets.xcassets */,
 				BF60AD2324722BA500347C29 /* LaunchScreen.storyboard */,
@@ -515,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE54CA12474FBE500A96C35 /* MTTMonitorManager.m in Sources */,
 				BF60AD1D24722BA300347C29 /* ViewController.m in Sources */,
 				BF60AD1724722BA300347C29 /* AppDelegate.m in Sources */,
 				BF60AD2824722BA500347C29 /* main.m in Sources */,

@@ -11,6 +11,7 @@
 
 
 @interface ViewController ()
+@property (nonatomic, strong) MTTThread *thread;
 
 @end
 
@@ -18,17 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MTTThread *thread = [[MTTThread alloc]initWithTarget:self selector:@selector(threadAction) object:nil];
-    [thread start];
+    [self threadTest];
     
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self performSelector:@selector(touchTheadAction) onThread:self.thread withObject:nil waitUntilDone:false];
+}
+
+- (void)threadTest {
+    MTTThread *thread = [[MTTThread alloc]initWithTarget:self selector:@selector(threadAction) object:nil];
+    [thread setName:@"myThread"];
+    [thread start];
+    self.thread = thread;
 }
 
 - (void)threadAction {
     
     @autoreleasepool {
         NSLog(@"当前线程:%@ 开始执行任务",[NSThread currentThread]);
-        [NSThread sleepForTimeInterval:3.0];
+        [NSThread sleepForTimeInterval:1.0];
         NSLog(@"当前线程:%@ 结束执行任务",[NSThread currentThread]);
+    }
+}
+
+- (void)touchTheadAction {
+    @autoreleasepool {
+        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+        [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+        NSLog(@"mode: %@",runLoop.currentMode);
+        [runLoop run];
     }
 }
 
