@@ -14,6 +14,7 @@
 		BF60AD2224722BA500347C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF60AD2124722BA500347C29 /* Assets.xcassets */; };
 		BF60AD2524722BA500347C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60AD2324722BA500347C29 /* LaunchScreen.storyboard */; };
 		BF60AD2824722BA500347C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60AD2724722BA500347C29 /* main.m */; };
+		BF710B5A2474B9ED001E6284 /* MTTThread.m in Sources */ = {isa = PBXBuildFile; fileRef = BF710B592474B9EC001E6284 /* MTTThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +197,8 @@
 		BF60AE8524722D7000347C29 /* CFUnicodeDecomposition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFUnicodeDecomposition.c; sourceTree = "<group>"; };
 		BF60AE8624722D7000347C29 /* CFPlugIn_PlugIn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFPlugIn_PlugIn.c; sourceTree = "<group>"; };
 		BF60AE8724722D7000347C29 /* CFPlugIn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFPlugIn.c; sourceTree = "<group>"; };
+		BF710B582474B9EC001E6284 /* MTTThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTThread.h; sourceTree = "<group>"; };
+		BF710B592474B9EC001E6284 /* MTTThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 				BF60AD2324722BA500347C29 /* LaunchScreen.storyboard */,
 				BF60AD2624722BA500347C29 /* Info.plist */,
 				BF60AD2724722BA500347C29 /* main.m */,
+				BF710B582474B9EC001E6284 /* MTTThread.h */,
+				BF710B592474B9EC001E6284 /* MTTThread.m */,
 			);
 			path = RunLoopSourceCode;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				BF60AD1724722BA300347C29 /* AppDelegate.m in Sources */,
 				BF60AD2824722BA500347C29 /* main.m in Sources */,
 				BF60AD1A24722BA300347C29 /* SceneDelegate.m in Sources */,
+				BF710B5A2474B9ED001E6284 /* MTTThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

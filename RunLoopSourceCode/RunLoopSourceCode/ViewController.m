@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSRunLoop *runLoop = [NSRunLoop mainRunLoop];
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
     
 }
 
