@@ -25,9 +25,11 @@
 
 - (void)threadAction {
     
-    NSLog(@"当前线程:%@ 开始执行任务",[NSThread currentThread]);
-    [NSThread sleepForTimeInterval:3.0];
-    NSLog(@"当前线程:%@ 结束执行任务",[NSThread currentThread]);
+    @autoreleasepool {
+        NSLog(@"当前线程:%@ 开始执行任务",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:3.0];
+        NSLog(@"当前线程:%@ 结束执行任务",[NSThread currentThread]);
+    }
 }
 
 
