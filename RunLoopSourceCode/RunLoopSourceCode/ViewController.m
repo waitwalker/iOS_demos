@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MTTThread.h"
+
 
 @interface ViewController ()
 
@@ -16,8 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    MTTThread *thread = [[MTTThread alloc]initWithTarget:self selector:@selector(threadAction) object:nil];
+    [thread start];
     
+}
+
+- (void)threadAction {
+    
+    NSLog(@"当前线程:%@ 开始执行任务",[NSThread currentThread]);
+    [NSThread sleepForTimeInterval:3.0];
+    NSLog(@"当前线程:%@ 结束执行任务",[NSThread currentThread]);
 }
 
 
