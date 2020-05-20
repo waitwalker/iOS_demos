@@ -8,6 +8,7 @@
 
 #import "MTTMonitorManager.h"
 #import <execinfo.h>
+#import "MTTCallStackManager.h"
 
 //
 static const NSUInteger MXRMonitorRunLoopMinOneStandstillMillisecond = 20;
@@ -108,6 +109,14 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
                     // 记录当前线程的调用栈
                     [strongSelf logStack];
                     [strongSelf printLogTrace];
+                    
+                    // 主线程调用栈
+                    NSString *mainBacktrace = [MTTCallStackManager backtraceWithMainThread];
+                    NSLog(@"mian thread call stack:%@",mainBacktrace);
+                    
+                    if (strongSelf.callBackWhenStandstill) {
+                        strongSelf.callBackWhenStandstill();
+                    }
                 }
             }
             strongSelf.countTime = 0;

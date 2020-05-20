@@ -16,6 +16,7 @@
 		BF60AD2824722BA500347C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60AD2724722BA500347C29 /* main.m */; };
 		BF710B5A2474B9ED001E6284 /* MTTThread.m in Sources */ = {isa = PBXBuildFile; fileRef = BF710B592474B9EC001E6284 /* MTTThread.m */; };
 		BFE54CA12474FBE500A96C35 /* MTTMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE54CA02474FBE500A96C35 /* MTTMonitorManager.m */; };
+		BFE54CA524751FD100A96C35 /* MTTCallStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE54CA424751FD100A96C35 /* MTTCallStackManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -202,6 +203,8 @@
 		BF710B592474B9EC001E6284 /* MTTThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTThread.m; sourceTree = "<group>"; };
 		BFE54C9F2474FBE500A96C35 /* MTTMonitorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTMonitorManager.h; sourceTree = "<group>"; };
 		BFE54CA02474FBE500A96C35 /* MTTMonitorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTMonitorManager.m; sourceTree = "<group>"; };
+		BFE54CA324751FD100A96C35 /* MTTCallStackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTCallStackManager.h; sourceTree = "<group>"; };
+		BFE54CA424751FD100A96C35 /* MTTCallStackManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTCallStackManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 				BF60AD1C24722BA300347C29 /* ViewController.m */,
 				BFE54C9F2474FBE500A96C35 /* MTTMonitorManager.h */,
 				BFE54CA02474FBE500A96C35 /* MTTMonitorManager.m */,
+				BFE54CA324751FD100A96C35 /* MTTCallStackManager.h */,
+				BFE54CA424751FD100A96C35 /* MTTCallStackManager.m */,
 				BF60AD1E24722BA300347C29 /* Main.storyboard */,
 				BF60AD2124722BA500347C29 /* Assets.xcassets */,
 				BF60AD2324722BA500347C29 /* LaunchScreen.storyboard */,
@@ -525,6 +530,7 @@
 				BF60AD1724722BA300347C29 /* AppDelegate.m in Sources */,
 				BF60AD2824722BA500347C29 /* main.m in Sources */,
 				BF60AD1A24722BA300347C29 /* SceneDelegate.m in Sources */,
+				BFE54CA524751FD100A96C35 /* MTTCallStackManager.m in Sources */,
 				BF710B5A2474B9ED001E6284 /* MTTThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
