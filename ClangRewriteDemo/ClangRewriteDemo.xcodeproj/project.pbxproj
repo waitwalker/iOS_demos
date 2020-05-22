@@ -14,6 +14,7 @@
 		BF492FE4247660E7000F9E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF492FE3247660E7000F9E78 /* Assets.xcassets */; };
 		BF492FE7247660E7000F9E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF492FE5247660E7000F9E78 /* LaunchScreen.storyboard */; };
 		BF492FEA247660E7000F9E78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF492FE9247660E7000F9E78 /* main.m */; };
+		BF492FF2247660F2000F9E78 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BF492FF1247660F2000F9E78 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BF492FE6247660E7000F9E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF492FE8247660E7000F9E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF492FE9247660E7000F9E78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF492FF0247660F2000F9E78 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BF492FF1247660F2000F9E78 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			children = (
 				BF492FD7247660E3000F9E78 /* AppDelegate.h */,
 				BF492FD8247660E3000F9E78 /* AppDelegate.m */,
+				BF492FF0247660F2000F9E78 /* Person.h */,
+				BF492FF1247660F2000F9E78 /* Person.m */,
 				BF492FDA247660E3000F9E78 /* SceneDelegate.h */,
 				BF492FDB247660E3000F9E78 /* SceneDelegate.m */,
 				BF492FDD247660E3000F9E78 /* ViewController.h */,
@@ -148,6 +153,7 @@
 			files = (
 				BF492FDF247660E3000F9E78 /* ViewController.m in Sources */,
 				BF492FD9247660E3000F9E78 /* AppDelegate.m in Sources */,
+				BF492FF2247660F2000F9E78 /* Person.m in Sources */,
 				BF492FEA247660E7000F9E78 /* main.m in Sources */,
 				BF492FDC247660E3000F9E78 /* SceneDelegate.m in Sources */,
 			);

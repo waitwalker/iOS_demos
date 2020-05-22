@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MTTThread.h"
+#import "MTTBlockManager.h"
 
 
 @interface ViewController ()
@@ -19,7 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self threadTest];
+    //[self threadTest];
+    
+    [MTTBlockManager blockWithCallBack:^(NSDictionary * _Nonnull parameter) {
+        NSLog(@"%@",parameter);
+    }];
     
 }
 
