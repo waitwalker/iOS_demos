@@ -1,0 +1,24 @@
+PODS:
+  - UMCAnalytics (6.1.0):
+    - UMCCommon
+  - UMCCommon (7.1.0)
+  - UMCCommonLog (2.0.0)
+
+DEPENDENCIES:
+  - UMCAnalytics
+  - UMCCommonLog
+
+SPEC REPOS:
+  trunk:
+    - UMCAnalytics
+    - UMCCommon
+    - UMCCommonLog
+
+SPEC CHECKSUMS:
+  UMCAnalytics: 3503f179f7af932b30af9ac161ac11fb48fa72b6
+  UMCCommon: 4e80f93492d300245683236668763dc5d0b04dbd
+  UMCCommonLog: 9b7ddde5d14a52fc1986ba5ac3121b8b2f433638
+
+PODFILE CHECKSUM: a0a85753dc4fc786f1ab6f0be84f9d0be6c06064
+
+COCOAPODS: 1.9.1

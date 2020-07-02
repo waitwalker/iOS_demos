@@ -30,9 +30,9 @@ void(^GlobalBlock2)(void) = ^{
     
 //    MTTBlockManager *block = [MTTBlockManager new];
 //
-//    [MTTBlockManager blockWithCallBack:^(NSDictionary * _Nonnull parameter) {
-//        NSLog(@"%@",parameter);
-//    }];
+    [MTTBlockManager blockWithCallBack:^(NSDictionary * _Nonnull parameter) {
+        NSLog(@"%@",parameter);
+    }];
     
     // 1 block 只要捕获了局部变量
     // 前提: 都会存储在栈上 stackBlock
@@ -73,12 +73,12 @@ void(^GlobalBlock2)(void) = ^{
     // block存储区域 global
     // 情况1) 没有捕获任何变量
     // 情况2) block定义在全局区
-    void (^GlobalBlock1)(void) = ^{
-        NSLog(@"block 存储在全局区 情况1");
-    };
-    
-    GlobalBlock1();
-    GlobalBlock2();
+//    void (^GlobalBlock1)(void) = ^{
+//        NSLog(@"block 存储在全局区 情况1");
+//    };
+//
+//    GlobalBlock1();
+//    GlobalBlock2();
     
 }
 

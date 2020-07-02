@@ -1,0 +1,6 @@
+framework module Pods_my_umeng_demo {
+  umbrella header "Pods-my_umeng_demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
