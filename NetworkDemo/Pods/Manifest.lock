@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (5.4.1)
+  - HandyJSON (5.0.2)
+  - NetworkLibrary (1.7):
+    - Alamofire (~> 5.4.1)
+    - HandyJSON (~> 5.0.2)
+
+DEPENDENCIES:
+  - NetworkLibrary
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - HandyJSON
+  https://github.com/waitwalker/PodSepcs.git:
+    - NetworkLibrary
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  NetworkLibrary: e941c38fedfb9d30177890e878f46bd298555ac5
+
+PODFILE CHECKSUM: 842741c30e471ea42b1f8b6d57f1ebf19da9b95f
+
+COCOAPODS: 1.10.0

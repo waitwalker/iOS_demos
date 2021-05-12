@@ -1,0 +1,16 @@
+PODS:
+  - DeviceHelper (0.2.0)
+
+DEPENDENCIES:
+  - DeviceHelper
+
+SPEC REPOS:
+  https://github.com/waitwalker/PodSepcs.git:
+    - DeviceHelper
+
+SPEC CHECKSUMS:
+  DeviceHelper: 60c3e59e030243c6dac1585403f994bd1b907011
+
+PODFILE CHECKSUM: f0dc223bdf027c5823fb4ef5f429ed6f59b6a9f8
+
+COCOAPODS: 1.10.0

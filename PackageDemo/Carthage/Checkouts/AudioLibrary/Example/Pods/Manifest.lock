@@ -1,0 +1,16 @@
+PODS:
+  - AudioLibrary (0.9)
+
+DEPENDENCIES:
+  - AudioLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  AudioLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AudioLibrary: 229e76f20b130b7d46eb18de3d011e4b00e6f1ce
+
+PODFILE CHECKSUM: d7946f614d6af55a399bc473f91f23d286e2aea9
+
+COCOAPODS: 1.10.0

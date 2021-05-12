@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/waitwalker/PodSepcs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+# platform :ios, '9.0'
+
+target 'NetworkDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'NetworkLibrary'
+
+  # Pods for NetworkDemo
+
+  target 'NetworkDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NetworkDemoUITests' do
+    # Pods for testing
+  end
+
+end
